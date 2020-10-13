@@ -14,13 +14,13 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/benchipperfield/FIT3179/main/choropleth_map/data/food_meat.csv"
+          "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/3_choropleth_map/data/covid_10_10_2020.csv"
         },
-        "key": "Area",
+        "key": "Country",
         "fields": ["Active"]
       }
     },
-    {"calculate": "datum.Active + 0.1", "as": "Y2013"}
+    {"calculate": "datum.Active + 0.1", "as": "Active Cases"}
   ],
   "projection": {
     "type": "equirectangular"
@@ -30,13 +30,13 @@
     },
   "encoding": {
     "color": {
-      "field": "Y2013",
+      "field": "Active Cases",
       "type": "quantitative",
       "scale": {"type": "log"}
     },
     "tooltip": [
-      {"field": "properties.NAME", "type": "nominal", "title": "Area"},
-      {"field": "Y2013", "type": "quantitative"}
+      {"field": "properties.NAME", "type": "nominal", "title": "Country"},
+      {"field": "Active", "type": "quantitative"}
     ]
   }
 
