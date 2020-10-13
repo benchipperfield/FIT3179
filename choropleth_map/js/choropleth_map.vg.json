@@ -20,7 +20,7 @@
         "fields": ["Active"]
       }
     },
-    {"calculate": "datum.Active + 0.1", "as": "Active Cases"}
+    {"calculate": "datum.Active + 0.1", "as": "Y2013"}
   ],
   "projection": {
     "type": "equirectangular"
@@ -35,8 +35,8 @@
       "scale": {"type": "log"}
     },
     "tooltip": [
-      {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-      {"field": "Active", "type": "quantitative"}
+      {"field": "properties.NAME", "type": "nominal", "title": "Area"},
+      {"field": "Y2013", "type": "quantitative"}
     ]
   }
 
