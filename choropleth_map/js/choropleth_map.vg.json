@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "FOOD!",
+  "title": "Meat consumption in 2013 (1000 tonnes)",
   "width": 800,
   "height": 600,
   "data": {
@@ -14,9 +14,9 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/3_choropleth_map/data/covid_10_10_2020.csv"
+          "url": "https://raw.githubusercontent.com/benchipperfield/FIT3179/main/choropleth_map/data/food_meat.csv"
         },
-        "key": "Country",
+        "key": "Area",
         "fields": ["Active"]
       }
     },
@@ -30,7 +30,7 @@
     },
   "encoding": {
     "color": {
-      "field": "Active Cases",
+      "field": "Y2013",
       "type": "quantitative",
       "scale": {"type": "log"}
     },
