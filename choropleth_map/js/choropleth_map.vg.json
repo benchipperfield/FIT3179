@@ -31,8 +31,8 @@
     
     },
     "tooltip": [
-      {"field": "properties.admin", "type": "nominal", "title": "Entity"},
-      {"field": "MEATTOTAL", "type": "quantitative"}
+      {"field": "properties.admin", "type": "nominal", "title": "Country"},
+      {"field": "MEATTOTAL", "type": "quantitative", "title": "Consumption per capita (kg)"}
     ]
   }
 }
