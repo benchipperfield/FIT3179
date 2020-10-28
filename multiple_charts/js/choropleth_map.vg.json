@@ -21,28 +21,28 @@
           "lookup": "properties.admin",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/benchipperfield/FIT3179/main/choropleth_map/data/Meat_world_data.csv",
+              "url": "https://raw.githubusercontent.com/benchipperfield/FIT3179/main/choropleth_map/data/FINALDATA.csv",
               "format": {
                 "type":"csv"
               }
             },
-            "key": "Entity",
-            "fields": ["MEATTOTAL"]
+            "key": "Country",
+            "fields": ["Meat_2017"]
           }
         }
       ],
       "mark": {"type": "geoshape"},
       "encoding": {
         "color": {
-      "field": "MEATTOTAL",
+      "field": "Meat_2017",
       "type": "quantitative",
       "scale": {"scheme": "reds"},
-      "legend": {"title": "Kg"}
+      "legend": {"title": "Consumption (Kg)"}
     },
     "tooltip": [
       {"field": "properties.admin", "type": "nominal", "title": "Country"},
       {
-        "field": "MEATTOTAL",
+        "field": "Meat_2017",
         "type": "quantitative",
         "title": "Consumption per capita (kg)"
       }
