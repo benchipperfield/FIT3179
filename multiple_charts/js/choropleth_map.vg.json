@@ -7,32 +7,59 @@
     "url": "https://raw.githubusercontent.com/benchipperfield/FIT3179/main/choropleth_map/custom.geo2.json",
     "format": {"type": "topojson", "feature": "custom"}
   },
-
-"params": [
-          {
-            "name": "FoodType",
-            "bind":{
-                "input": "select",
-                 "options": ["Cereals - Excluding Beer_2017", "Starchy Roots_2017", "Meat_2017", "Sugar Crops_2017", "Sugar & Sweeteners_2017", "Pulses_2017", "Treenuts_2017", "Oilcrops_2017", "Vegetable Oils_2017", "Vegetables_2017", "Fruits - Excluding Wine_2017", "Stimulants_2017", "Spices_2017", "Alcoholic Beverages_2017", "Offals_2017", "Animal fats_2017", "Eggs_2017", "Milk - Excluding Butter_2017", "Fish, Seafood_2017", "Miscellaneous_2017"],
-                
-                "labels":[
- "Cereals - Excluding Beer", "Starchy Roots", "Meat", "Sugar Crops", "Sugar & Sweeteners", "Pulses (Legumes)", "Treenuts", "Oilcrops", "Vegetable Oils", "Vegetables", "Fruits - Excluding Wine", "Stimulants (Coffee, Tea, Etc)", "Spices", "Alcoholic Beverages", "Offals (Organ Meats)", "Animal fats", "Eggs", "Milk - Excluding Butter", "Fish, Seafood", "Miscellaneous"
- ],
-
-"name": "Food Type: "
-
-
-            }
-          }
-      ],
-
-
-
-
-
-
-
-
+  "params": [
+    {
+      "name": "FoodType",
+      "bind": {
+        "input": "select",
+        "options": [null,
+          "Cereals - Excluding Beer_2017",
+          "Starchy Roots_2017",
+          "Meat_2017",
+          "Sugar Crops_2017",
+          "Sugar & Sweeteners_2017",
+          "Pulses_2017",
+          "Treenuts_2017",
+          "Oilcrops_2017",
+          "Vegetable Oils_2017",
+          "Vegetables_2017",
+          "Fruits - Excluding Wine_2017",
+          "Stimulants_2017",
+          "Spices_2017",
+          "Alcoholic Beverages_2017",
+          "Offals_2017",
+          "Animal fats_2017",
+          "Eggs_2017",
+          "Milk - Excluding Butter_2017",
+          "Fish, Seafood_2017",
+          "Miscellaneous_2017"
+        ],
+        "labels": ["SELECT A FOOD TYPE",
+          "Cereals - Excluding Beer",
+          "Starchy Roots",
+          "Meat",
+          "Sugar Crops",
+          "Sugar & Sweeteners",
+          "Pulses (Legumes)",
+          "Treenuts",
+          "Oilcrops",
+          "Vegetable Oils",
+          "Vegetables",
+          "Fruits - Excluding Wine",
+          "Stimulants (Coffee, Tea, Etc)",
+          "Spices",
+          "Alcoholic Beverages",
+          "Offals (Organ Meats)",
+          "Animal fats",
+          "Eggs",
+          "Milk - Excluding Butter",
+          "Fish, Seafood",
+          "Miscellaneous"
+        ],
+        "name": "Food Type: "
+      }
+    }
+  ],
   "projection": {"type": "equalEarth"},
   "layer": [
     {"mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}},
@@ -46,18 +73,31 @@
               "format": {"type": "csv"}
             },
             "key": "Country",
-            "fields": ["Cereals - Excluding Beer_2017", "Starchy Roots_2017", "Meat_2017", "Sugar Crops_2017", "Sugar & Sweeteners_2017", "Pulses_2017", "Treenuts_2017", "Oilcrops_2017", "Vegetable Oils_2017", "Vegetables_2017", "Fruits - Excluding Wine_2017", "Stimulants_2017", "Spices_2017", "Alcoholic Beverages_2017", "Offals_2017", "Animal fats_2017", "Eggs_2017", "Milk - Excluding Butter_2017", "Fish, Seafood_2017", "Miscellaneous_2017"]
+            "fields": [
+              "Cereals - Excluding Beer_2017",
+              "Starchy Roots_2017",
+              "Meat_2017",
+              "Sugar Crops_2017",
+              "Sugar & Sweeteners_2017",
+              "Pulses_2017",
+              "Treenuts_2017",
+              "Oilcrops_2017",
+              "Vegetable Oils_2017",
+              "Vegetables_2017",
+              "Fruits - Excluding Wine_2017",
+              "Stimulants_2017",
+              "Spices_2017",
+              "Alcoholic Beverages_2017",
+              "Offals_2017",
+              "Animal fats_2017",
+              "Eggs_2017",
+              "Milk - Excluding Butter_2017",
+              "Fish, Seafood_2017",
+              "Miscellaneous_2017"
+            ]
           }
         },
-
-
-{
-              "calculate": "datum[FoodType]",
-              "as": "Consumption"
-            }
-          
-
-
+        {"calculate": "datum[FoodType]", "as": "Consumption"}
       ],
       "mark": {"type": "geoshape"},
       "encoding": {
