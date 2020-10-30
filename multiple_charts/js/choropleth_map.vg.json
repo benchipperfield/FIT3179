@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "Food Consumption Per Capita (2017)",
-  "width": 1000,
+  "width": 600,
   "height": 375,
   "data": {
     "url": "https://raw.githubusercontent.com/benchipperfield/FIT3179/main/choropleth_map/custom.geo2.json",
