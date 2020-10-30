@@ -1,4 +1,5 @@
 {
+  "config": {"font": "Open Sans"},
   "data": {"url": "https://raw.githubusercontent.com/benchipperfield/FIT3179/main/multiple_charts/data/BARCHARTDATA.csv"},
    "title": "Food Consumption Composition by Region (2017)",
   "width": 475,
