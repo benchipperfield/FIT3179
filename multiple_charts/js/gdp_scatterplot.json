@@ -1,0 +1,158 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 475,
+  "height": 325,
+  "title": "Food Consumption per Country (2017)",
+  "data": {
+    "url": "https://raw.githubusercontent.com/benchipperfield/FIT3179/main/multiple_charts/data/FINALDATAWITHGDP.csv"
+  },
+  "params": [
+    {
+      "name": "GDP_Above",
+      "value": 0,
+      "bind": {
+        "input": "range",
+        "min": 0,
+        "max": 70000,
+        "step": 100,
+        "name": "Minimum GDP Per Capita: "
+      }
+    },
+    {
+      "name": "Continent_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "North America",
+          "South America",
+          "Europe",
+          "Africa",
+          "Asia",
+          "Oceania"
+        ],
+        "labels":[
+          "Show All",
+          "North America",
+          "South America",
+          "Europe",
+          "Africa",
+          "Asia",
+          "Oceania"
+        ],
+        "name": "Continent Selection: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "datum.GDP_PPP_2017 > GDP_Above"},
+    {"filter": "Continent_selection == null || datum.Region == Continent_selection"},
+    {
+     
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Meat_2017",
+      "type": "quantitative",
+      "title":"Meat consumption (Kg per capita)",
+      "axis": {"tickCount": 3}
+      
+    },
+    "y": {
+      "field": "Vegetables_2017",
+      "type": "quantitative",
+      "title":"Vegetable consumption (Kg per capita)",
+      "axis": { "tickCount": 3}
+    }
+  },
+  "layer": [
+    {
+      "selection": {
+        "continent_highlight": {
+          "type": "multi",
+          "fields": ["Region"],
+          "bind": "legend"
+        }
+      },
+      "mark": "circle",
+      "encoding": {
+        "size": {
+          "field": "GDP_PPP_2017",
+          "type": "quantitative",
+          "scale": {
+            "type": "threshold",
+            "domain": [1000, 5000, 10000, 30000, 50000, 100000],
+            "range": [10, 25, 75, 100, 150, 200]
+          },
+          "legend": {"format": ".1s", "title": "GDP Per Capita"}
+        },
+        "color": {
+          "field": "Region",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "North America",
+              "South America",
+              "Europe",
+              "Africa",
+              "Asia",
+              "Oceania"
+            ],
+            "range": [
+              "#e41a1c",
+              "#984ea3",
+              "#ff7f00",
+              "#a6cee3",
+              "#377eb8",
+              "#a65628"
+            ]
+          }
+        },
+        "opacity": {
+          "condition": {"selection": "continent_highlight", "value": 0.6},
+          "value": 0.2
+        },
+        "tooltip": [
+          {"field": "Country", "type": "nominal"},
+      {"field": "Meat_2017", "title": "Meat Consumption (Kg)", "type": "quantitative", "format": ","},
+      {"field": "Vegetables_2017", "title": "Vegetable Consumption (Kg)", "type": "quantitative", "format": ","},
+      {"field": "GDP_PPP_2017", "title": "GDP Per Capita", "type": "quantitative", "format": ","},
+          {
+
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "dx": -12,
+        "fontSize": 11.5,
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "text": {"field": "Country", "type": "nominal"},
+        "color": {"value": "black"},
+        "opacity": {
+          "condition": {
+            "test": "datum['Country'] == 'China' || datum['Country'] == 'India' || datum['Country'] == 'Bangladesh' || datum['Country'] == 'Ethiopia' || datum['Country'] == 'Hong Kong' || datum['Country'] == 'Tunisia' ||  datum['Country'] == 'Tajikistan' ||  datum['Country'] == 'Croatia'",
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "Country", "type": "nominal"},
+      {"field": "Meat_2017", "title": "Meat Consumption (Kg)", "type": "quantitative", "format": ","},
+      {"field": "Vegetables_2017", "title": "Vegetable Consumption (Kg)", "type": "quantitative", "format": ","},
+      {"field": "GDP_PPP_2017", "title": "GDP Per Capita", "type": "quantitative", "format": ","},
+          {
+
+          }
+        ]
+      }
+    }
+  ]
+}
