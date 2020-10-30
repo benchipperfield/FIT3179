@@ -2,7 +2,11 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": 475,
   "height": 325,
-  "title": "Food Consumption per Country (2017)",
+  "title": { "text": "Food Consumption per Country (2017)",
+  "subtitle": "GDP per capita measured with respect to 2017 international dollars",
+  "subtitleFontStyle": "italic"},
+
+  "config": {"font": "Open Sans"},
   "data": {
     "url": "https://raw.githubusercontent.com/benchipperfield/FIT3179/main/multiple_charts/data/FINALDATAWITHGDP.csv"
   },
@@ -15,7 +19,7 @@
         "min": 0,
         "max": 70000,
         "step": 100,
-        "name": "Minimum GDP Per Capita: "
+        "name": "Minimum GDP per capita: "
       }
     },
     {
@@ -85,7 +89,7 @@
             "domain": [1000, 5000, 10000, 30000, 50000, 100000],
             "range": [10, 25, 75, 100, 150, 200]
           },
-          "legend": {"format": ".1s", "title": "GDP Per Capita"}
+          "legend": {"format": ".1s", "title": "GDP per capita"}
         },
         "color": {
           "field": "Region",
@@ -138,7 +142,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['Country'] == 'China' || datum['Country'] == 'Australia' || datum['Country'] == 'United States of America' || datum['Country'] == 'Armenia' || datum['Country'] == 'Hong Kong' || datum['Country'] == 'Tunisia' ||  datum['Country'] == 'Albania' ||  datum['Country'] == 'Croatia' ||  datum['Country'] == 'Laos' ||  datum['Country'] == 'Argentina' ||  datum['Country'] == 'Samoa' ||  datum['Country'] == 'Israel' ||  datum['Country'] == 'Kazakhstan' ||  datum['Country'] == 'Nepal' ||  datum['Country'] == 'Egypt'",
+            "test": "datum['Country'] == 'China' || datum['Country'] == 'Australia' || datum['Country'] == 'United States of America' || datum['Country'] == 'Armenia' || datum['Country'] == 'Hong Kong' || datum['Country'] == 'Tunisia' ||  datum['Country'] == 'Albania' ||  datum['Country'] == 'Croatia' ||  datum['Country'] == 'Laos' ||  datum['Country'] == 'Argentina' ||  datum['Country'] == 'Samoa' ||  datum['Country'] == 'Portugal' ||  datum['Country'] == 'Kazakhstan' ||  datum['Country'] == 'Nepal' ||  datum['Country'] == 'Egypt'",
             "value": 1
           },
           "value": 0
@@ -147,12 +151,12 @@
           {"field": "Country", "type": "nominal"},
       {"field": "Meat_2017", "title": "Meat Consumption (Kg)", "type": "quantitative", "format": ","},
       {"field": "Vegetables_2017", "title": "Vegetable Consumption (Kg)", "type": "quantitative", "format": ","},
-      {"field": "GDP_PPP_2017", "title": "GDP Per Capita", "type": "quantitative", "format": ","},
-          {
-
-          }
+      {"field": "GDP_PPP_2017", "title": "GDP Per Capita", "type": "quantitative", "format": ","}
         ]
       }
+
+
+
     }
   ]
 }
