@@ -13,6 +13,7 @@
     "color": {
  "field": "Category",
  "type": "nominal",
+ "title": "Food Type",
  "scale": {
  "domain": [
 "Alcoholic Beverages",
@@ -36,14 +37,14 @@
  "Vegetables"
  ],
  "range": [
- "#08306b",
+ "#41b6c4",
  "#dadaeb",
- "#fb6a4a",
+ "#a65628",
  "#525252",
  "#a6cee3",
- "#a65628",
- "#377eb8",
  "#810f7c",
+ "#911a24",
+ "#fb6a4a",
   "#7fcdbb",
  "#ffeda0",
  "#e7298a",
@@ -51,10 +52,10 @@
  "#969696",
  "#cb181d",
  "#f0f0f0",
- "#67001f",
+ "#4292c6",
  "#bcbddc",
  "#7f2704",
- "#41b6c4"
+ "#08519c"
  ]
  }
 
@@ -62,7 +63,7 @@
 
 "tooltip": [
           {"field": "Region", "type": "nominal"},
-      {"field": "Category", "title": "Food Category", "type": "nominal"},
+      {"field": "Category", "title": "Food Type", "type": "nominal"},
       {"field": "Percentage", "title": "Percentage (%)", "type": "quantitative", "format": ".2f"}
         ]
 
