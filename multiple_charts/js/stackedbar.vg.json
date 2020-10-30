@@ -1,0 +1,73 @@
+{
+  "data": {"url": "https://raw.githubusercontent.com/benchipperfield/FIT3179/main/multiple_charts/data/BARCHARTDATA.csv"},
+   "title": "Food Consumption Composition by Region (2017)",
+  "width": 475,
+  "height": 325,
+
+  "mark": "bar",
+  "encoding": {
+
+
+    "y": {"field": "Region", "title": ""},
+    "x": {"aggregate": "sum", "field": "Percentage", "title": "Percentage (%)", "type": "quantitative", "scale": {"domain": [0,100]}},
+    "color": {
+ "field": "Category",
+ "type": "nominal",
+ "scale": {
+ "domain": [
+"Alcoholic Beverages",
+"Animal fats",
+ "Cereals - Excluding Beer",
+ "Eggs",
+  "Fish, Seafood",
+"Fruits - Excluding Wine",
+"Meat",
+"Milk - Excluding Butter",
+"Offals",
+"Oilcrops",
+"Pulses",
+"Spices",
+ "Starchy Roots",
+  "Stimulants",
+ "Sugar & Sweeteners",
+ "Sugar Crops",
+ "Treenuts",
+ "Vegetable Oils",
+ "Vegetables"
+ ],
+ "range": [
+ "#08306b",
+ "#dadaeb",
+ "#fb6a4a",
+ "#525252",
+ "#a6cee3",
+ "#a65628",
+ "#377eb8",
+ "#810f7c",
+  "#7fcdbb",
+ "#ffeda0",
+ "#e7298a",
+ "#000000",
+ "#969696",
+ "#cb181d",
+ "#f0f0f0",
+ "#67001f",
+ "#bcbddc",
+ "#7f2704",
+ "#41b6c4"
+ ]
+ }
+
+ },
+
+"tooltip": [
+          {"field": "Region", "type": "nominal"},
+      {"field": "Category", "title": "Food Category", "type": "nominal"},
+      {"field": "Percentage", "title": "Percentage (%)", "type": "quantitative", "format": ".2f"}
+        ]
+
+
+
+
+  }
+}
