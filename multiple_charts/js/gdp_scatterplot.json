@@ -103,14 +103,14 @@
               "#e41a1c",
               "#984ea3",
               "#ff7f00",
-              "#a6cee3",
-              "#377eb8",
+              "#001685",
+              "#007ee6",
               "#a65628"
             ]
           }
         },
         "opacity": {
-          "condition": {"selection": "continent_highlight", "value": 0.6},
+          "condition": {"selection": "continent_highlight", "value": 0.9},
           "value": 0.2
         },
         "tooltip": [
@@ -138,7 +138,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['Country'] == 'China' || datum['Country'] == 'India' || datum['Country'] == 'Bangladesh' || datum['Country'] == 'Ethiopia' || datum['Country'] == 'Hong Kong' || datum['Country'] == 'Tunisia' ||  datum['Country'] == 'Tajikistan' ||  datum['Country'] == 'Croatia'",
+            "test": "datum['Country'] == 'China' || datum['Country'] == 'Australia' || datum['Country'] == 'United States of America' || datum['Country'] == 'Armenia' || datum['Country'] == 'Hong Kong' || datum['Country'] == 'Tunisia' ||  datum['Country'] == 'Albania' ||  datum['Country'] == 'Croatia' ||  datum['Country'] == 'Laos' ||  datum['Country'] == 'Argentina' ||  datum['Country'] == 'Samoa' ||  datum['Country'] == 'Israel' ||  datum['Country'] == 'Kazakhstan' ||  datum['Country'] == 'Nepal' ||  datum['Country'] == 'Egypt'",
             "value": 1
           },
           "value": 0
