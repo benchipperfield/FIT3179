@@ -3,6 +3,7 @@
   "title": "Food Consumption Per Capita (2017)",
   "width": 1000,
   "height": 375,
+  "config": {"font": "Open Sans"},
   "data": {
     "url": "https://raw.githubusercontent.com/benchipperfield/FIT3179/main/choropleth_map/custom.geo2.json",
     "format": {"type": "topojson", "feature": "custom"}
