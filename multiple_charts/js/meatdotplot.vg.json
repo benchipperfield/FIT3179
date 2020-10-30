@@ -63,7 +63,7 @@
           },
           "title": "Year"
         },
-        "size": {"value": 100},
+        "size": {"value": 200},
         "opacity": {"value": 1},
         "tooltip": [
           {"field": "Region", "type": "nominal", "title": "Region"},
