@@ -45,7 +45,7 @@
           "field": "Region",
           "type": "nominal"
         },
-        "color": {"value": "#db646f"}
+        "color": {"value": "#6baed6"}
       }
     },
     {
@@ -59,7 +59,7 @@
           "type": "ordinal",
           "scale": {
             "domain": [2014, 2017],
-            "range": ["#e6959c", "#911a24"]
+            "range": ["#6baed6", "#08519c"]
           },
           "title": "Year"
         },
