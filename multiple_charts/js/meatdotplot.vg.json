@@ -1,11 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "description": "A ranged dot plot that uses 'layer' to convey changing life expectancy for the five most populous countries (between 1955 and 2000).",
   "width": 425,
   "height": 200,
   "config": {"font": "Open Sans"},
   "data": {"url": "https://raw.githubusercontent.com/benchipperfield/FIT3179/main/multiple_charts/data/dotplotdata.csv"},
-  "title": "Change in Average Meat Consumption Per Capita ",
+  "title": "Change in Average Meat Consumption Per Capita from 2014 to 2017",
   "transform": [
     {
       "filter": {
@@ -75,9 +74,23 @@
           },
 {"field": "Year", "type": "nominal", "title": "Year"}
 
-
         ]
       }
+    },
+
+{
+      "mark": "rule",
+      "encoding": {
+        "x": {"value": 50},
+        "y": {"value": 0},
+       "x": {"value": 295},
+       "y2": {"value": 200},
+        "size": {"value": 1},
+        "opacity": {"value": 1},
+        "color": {"value": "red"}
+      }
     }
+
+
   ]
 }
