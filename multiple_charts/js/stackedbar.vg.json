@@ -1,7 +1,9 @@
 {
   "config": {"font": "Open Sans"},
   "data": {"url": "https://raw.githubusercontent.com/benchipperfield/FIT3179/main/multiple_charts/data/BARCHARTDATAOTHER.csv"},
-   "title": "Food Consumption Composition by Region (2017)",
+   "title": { "text": "Food Consumption Composition by Region (2017)",
+   "subtitle": "‘Other’ food type consists of low relative consumption categories such as spices and eggs.",
+   "subtitleFontStyle": "italic"},
   "width": 475,
   "height": 325,
 
