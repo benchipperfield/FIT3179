@@ -3,7 +3,7 @@
   "width": 475,
   "height": 325,
   "title": { "text": "Food Consumption per Country (2017)",
-  "subtitle": "GDP per capita measured with respect to 2017 international dollars",
+  "subtitle": "GDP per capita measured in 2017 international dollars",
   "subtitleFontStyle": "italic"},
 
   "config": {"font": "Open Sans"},
@@ -44,7 +44,7 @@
           "Asia",
           "Oceania"
         ],
-        "name": "Continent Selection: "
+        "name": "Region Selection: "
       }
     }
   ],
@@ -87,7 +87,7 @@
           "scale": {
             "type": "threshold",
             "domain": [1000, 5000, 10000, 30000, 50000, 100000],
-            "range": [10, 25, 75, 100, 150, 200]
+            "range": [20, 40, 75, 125, 180, 275, 450]
           },
           "legend": {"format": ".1s", "title": "GDP per capita"}
         },
@@ -114,7 +114,7 @@
           }
         },
         "opacity": {
-          "condition": {"selection": "continent_highlight", "value": 0.9},
+          "condition": {"selection": "continent_highlight", "value": 0.7},
           "value": 0.2
         },
         "tooltip": [
@@ -133,16 +133,15 @@
         "type": "text",
         "align": "right",
         "baseline": "middle",
-        "dx": -12,
-        "fontSize": 11.5,
-        "fontStyle": "italic"
+        "dx": -9,
+        "fontSize": 11.5
       },
       "encoding": {
         "text": {"field": "Country", "type": "nominal"},
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['Country'] == 'China' || datum['Country'] == 'Australia' || datum['Country'] == 'United States of America' || datum['Country'] == 'Armenia' || datum['Country'] == 'Hong Kong' || datum['Country'] == 'Tunisia' ||  datum['Country'] == 'Albania' ||  datum['Country'] == 'Croatia' ||  datum['Country'] == 'Laos' ||  datum['Country'] == 'Argentina' ||  datum['Country'] == 'Samoa' ||  datum['Country'] == 'Portugal' ||  datum['Country'] == 'Kazakhstan' ||  datum['Country'] == 'Nepal' ||  datum['Country'] == 'Egypt'",
+            "test": " datum['Country'] == 'Armenia' || datum['Country'] == 'Hong Kong' || datum['Country'] == 'Tunisia' ||  datum['Country'] == 'Portugal' ||  datum['Country'] == 'Egypt' ||  datum['Country'] == 'Niger' ||  datum['Country'] == ''",
             "value": 1
           },
           "value": 0
@@ -154,9 +153,27 @@
       {"field": "GDP_PPP_2017", "title": "GDP Per Capita", "type": "quantitative", "format": ","}
         ]
       }
+    },
+{
+"mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 9,
+        "fontSize": 11.5
+      },
+      "encoding": {
+        "text": {"field": "Country", "type": "nominal"},
+        "color": {"value": "black"},
+        "opacity": {
+          "condition": {
+            "test": "datum['Country'] == 'China' || datum['Country'] == 'Australia' ||  datum['Country'] == 'Albania' ||  datum['Country'] == 'Croatia' ||  datum['Country'] == 'Laos' ||  datum['Country'] == 'Argentina' ||  datum['Country'] == 'Samoa' ||  datum['Country'] == 'Malta' ||  datum['Country'] == 'Guyana' ||  datum['Country'] == 'Brazil' ||  datum['Country'] == 'Turkey' ||  datum['Country'] == 'Bosnia and Herzegovina' ||  datum['Country'] == 'Iran' ||  datum['Country'] == 'Lebanon' ||  datum['Country'] == 'Chad' ||  datum['Country'] == ''",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+}
 
-
-
-    }
   ]
 }
