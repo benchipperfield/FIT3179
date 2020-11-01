@@ -1,6 +1,6 @@
 {
   "config": {"font": "Open Sans"},
-  "data": {"url": "https://raw.githubusercontent.com/benchipperfield/FIT3179/main/multiple_charts/data/BARCHARTDATA.csv"},
+  "data": {"url": "https://raw.githubusercontent.com/benchipperfield/FIT3179/main/multiple_charts/data/BARCHARTDATAOTHER.csv"},
    "title": "Food Consumption Composition by Region (2017)",
   "width": 475,
   "height": 325,
@@ -18,45 +18,29 @@
  "scale": {
  "domain": [
 "Alcoholic Beverages",
-"Animal fats",
  "Cereals - Excluding Beer",
- "Eggs",
   "Fish, Seafood",
 "Fruits - Excluding Wine",
 "Meat",
 "Milk - Excluding Butter",
-"Offals",
 "Oilcrops",
-"Pulses",
-"Spices",
+ "Other",
  "Starchy Roots",
-  "Stimulants",
  "Sugar & Sweeteners",
- "Sugar Crops",
- "Treenuts",
- "Vegetable Oils",
  "Vegetables"
  ],
  "range": [
- "#41b6c4",
- "#dadaeb",
+  "#08519c",
+   "#ffeda0",
+   "#810f7c",
+  "#bdbdbd",
+   "#cb181d",
  "#a65628",
- "#525252",
  "#a6cee3",
- "#810f7c",
- "#911a24",
- "#fb6a4a",
-  "#7fcdbb",
- "#ffeda0",
- "#e7298a",
- "#000000",
- "#969696",
- "#cb181d",
- "#f0f0f0",
+ "#525252",
  "#4292c6",
- "#bcbddc",
- "#7f2704",
- "#08519c"
+ "#911a24",
+ "#fb6a4a"
  ]
  }
 
