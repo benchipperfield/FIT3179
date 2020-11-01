@@ -1,0 +1,67 @@
+﻿Category,Region,Value,Nvalue,Percentage
+Cereals - Excluding Beer,Africa,6640.81,0.28844606,28.84460604
+Cereals - Excluding Beer,Asia,6937.62,0.296204169,29.62041692
+Cereals - Excluding Beer,Europe,5902.05,0.144251638,14.4251638
+Cereals - Excluding Beer,North America,2894.88,0.186132042,18.61320416
+Cereals - Excluding Beer,Oceania,934.77,0.148841379,14.88413788
+Cereals - Excluding Beer,South America,1737.39,0.211148367,21.11483674
+Starchy Roots,Africa,4870.98,0.211572834,21.1572834
+Starchy Roots,Asia,1311.71,0.056003928,5.600392797
+Starchy Roots,Europe,3075.74,0.075173971,7.51739706
+Starchy Roots,North America,959.06,0.061664662,6.166466167
+Starchy Roots,Oceania,998.66,0.159014444,15.90144436
+Starchy Roots,South America,779.38,0.094719559,9.471955898
+Sugar & Sweeteners,Africa,860.18,0.037362239,3.736223928
+Sugar & Sweeteners,Asia,1128.39,0.048177015,4.817701495
+Sugar & Sweeteners,Europe,2448.4,0.059841193,5.984119256
+Sugar & Sweeteners,North America,1275.49,0.082010155,8.201015507
+Sugar & Sweeteners,Oceania,436.17,0.069450393,6.945039337
+Sugar & Sweeteners,South America,518.66,0.063033753,6.303375306
+Oilcrops,Africa,407.56,0.017702521,1.770252069
+Oilcrops,Asia,272.23,0.011622957,1.162295729
+Oilcrops,Europe,165.57,0.004046686,0.40466861
+Oilcrops,North America,195.1,0.012544341,1.25443408
+Oilcrops,Oceania,672.6,0.107096624,10.70966242
+Oilcrops,South America,74.09,0.009004301,0.900430102
+Vegetables,Africa,2139.16,0.092915213,9.291521285
+Vegetables,Asia,4409.45,0.188263046,18.82630461
+Vegetables,Europe,5815.36,0.142132853,14.21328531
+Vegetables,North America,1722.28,0.110737403,11.07374028
+Vegetables,Oceania,507.86,0.080865435,8.086543499
+Vegetables,South America,858.75,0.104365549,10.43655486
+Fruits - Excluding Wine,Africa,2609.05,0.11332506,11.33250603
+Fruits - Excluding Wine,Asia,2443.06,0.104307321,10.43073212
+Fruits - Excluding Wine,Europe,3679.5,0.089930431,8.993043131
+Fruits - Excluding Wine,North America,2843.98,0.182859325,18.28593253
+Fruits - Excluding Wine,Oceania,664.45,0.105798918,10.57989176
+Fruits - Excluding Wine,South America,1153.82,0.140225976,14.02259765
+Alcoholic Beverages,Africa,1366.36,0.059348356,5.934835647
+Alcoholic Beverages,Asia,574,0.024507135,2.450713546
+Alcoholic Beverages,Europe,3753.06,0.091728307,9.172830671
+Alcoholic Beverages,North America,972.93,0.062556461,6.255646079
+Alcoholic Beverages,Oceania,368.96,0.058748692,5.874869234
+Alcoholic Beverages,South America,589,0.071582309,7.158230933
+Meat,Africa,907.23,0.039405874,3.940587359
+Meat,Asia,1587.99,0.067799801,6.779980147
+Meat,Europe,3041.26,0.074331247,7.433124705
+Meat,North America,1435.64,0.092307316,9.230731642
+Meat,Oceania,605.42,0.0963997,9.639970001
+Meat,South America,729.6,0.088669699,8.866969929
+Milk - Excluding Butter,Africa,1489.07,0.064678311,6.467831111
+Milk - Excluding Butter,Asia,2409.49,0.102874038,10.2874038
+Milk - Excluding Butter,Europe,9950.93,0.243210063,24.3210063
+Milk - Excluding Butter,North America,1874.05,0.120495755,12.04957554
+Milk - Excluding Butter,Oceania,484.32,0.077117212,7.711721237
+Milk - Excluding Butter,South America,1189.19,0.144524561,14.4524561
+"Fish, Seafood",Africa,507.65,0.022049967,2.204996718
+"Fish, Seafood",Asia,901.41,0.038486023,3.848602261
+"Fish, Seafood",Europe,923.39,0.022568518,2.256851773
+"Fish, Seafood",North America,467.28,0.030044693,3.004469283
+"Fish, Seafood",Oceania,338.02,0.053822184,5.382218394
+"Fish, Seafood",South America,141.37,0.01718097,1.718096956
+Other,Africa,1224.18,0.053172715,5.317271511
+Other,Asia,1446.4,0.061754566,6.175456573
+Other,Europe,2159.7,0.052785094,5.278509377
+Other,North America,912.14,0.058647847,5.864784737
+Other,Oceania,269.08,0.042845019,4.28450188
+Other,South America,457.04,0.055544955,5.554495527
