@@ -119,8 +119,8 @@
         },
         "tooltip": [
           {"field": "Country", "type": "nominal"},
-      {"field": "Meat_2017", "title": "Meat Consumption (Kg)", "type": "quantitative", "format": ","},
-      {"field": "Vegetables_2017", "title": "Vegetable Consumption (Kg)", "type": "quantitative", "format": ","},
+      {"field": "Meat_2017", "title": "Meat Consumption (Kg pc)", "type": "quantitative", "format": ","},
+      {"field": "Vegetables_2017", "title": "Vegetable Consumption (Kg pc)", "type": "quantitative", "format": ","},
       {"field": "GDP_PPP_2017", "title": "GDP Per Capita", "type": "quantitative", "format": ","},
           {
 
