@@ -4,8 +4,8 @@
   "height": 200,
   "config": {"font": "Open Sans"},
   "data": {"url": "https://raw.githubusercontent.com/benchipperfield/FIT3179/main/multiple_charts/data/dotplotdata.csv"},
-   "title": { "text": "Change in Average Meat Consumption Per Capita from 2014 to 2017",
-   "subtitle": "Red mark indicates average world meat consumption per capita in 2017",
+   "title": { "text": "Change in Meat Consumption Per Capita from 2014 to 2017",
+   "subtitle": "Red mark indicates world meat consumption per capita in 2017",
    "subtitleFontStyle": "italic"},
   "transform": [
     {
@@ -25,7 +25,7 @@
     "x": {
       "field": "Meat",
       "type": "quantitative",
-      "title": "Average meat consumption (Kilograms per capita)"
+      "title": "Meat consumption (Kilograms per capita)"
     },
     "y": {
       "field": "Region",
