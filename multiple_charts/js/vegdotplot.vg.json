@@ -25,7 +25,7 @@
     "x": {
       "field": "Veg",
       "type": "quantitative",
-      "title": "Vegetable consumption (Kg per capita)"
+      "title": "Average vegetable consumption (Kilograms per capita)"
     },
     "y": {
       "field": "Region",
