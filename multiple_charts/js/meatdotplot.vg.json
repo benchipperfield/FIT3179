@@ -72,7 +72,7 @@
           {
             "field": "Meat",
             "type": "quantitative",
-            "title": "Consumption per capita (Kg)"
+            "title": "Consumption Per Capita (Kg)"
           },
 {"field": "Year", "type": "nominal", "title": "Year"}
 
