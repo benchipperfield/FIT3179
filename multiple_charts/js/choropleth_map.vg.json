@@ -119,7 +119,7 @@
           {
             "field": "Consumption",
             "type": "quantitative",
-            "title": "Consumption Per Capita (kg)"
+            "title": "Consumption Per Capita (Kg)"
           }
         ]
       }
