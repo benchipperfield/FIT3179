@@ -4,8 +4,8 @@
   "height": 200,
   "config": {"font": "Open Sans"},
   "data": {"url": "https://raw.githubusercontent.com/benchipperfield/FIT3179/main/multiple_charts/data/dotplotdata.csv"},
-  "title": { "text": "Change in Average Vegetable Consumption Per Capita from 2014 to 2017",
-   "subtitle": "Red mark indicates average world vegetable consumption per capita in 2017",
+  "title": { "text": "Change in Vegetable Consumption Per Capita from 2014 to 2017",
+   "subtitle": "Red mark indicates world vegetable consumption per capita in 2017",
    "subtitleFontStyle": "italic"},
   "transform": [
     {
@@ -25,7 +25,7 @@
     "x": {
       "field": "Veg",
       "type": "quantitative",
-      "title": "Average vegetable consumption (Kilograms per capita)"
+      "title": "Vegetable consumption (Kilograms per capita)"
     },
     "y": {
       "field": "Region",
