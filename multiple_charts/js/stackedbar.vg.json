@@ -12,7 +12,7 @@
 
 
     "y": {"field": "Region", "title": ""},
-    "x": {"aggregate": "sum", "field": "Percentage", "title": "Percentage (%)", "type": "quantitative", "scale": {"domain": [0,100]}},
+    "x": {"aggregate": "sum", "field": "Percentage", "title": "Percentage of total food consumption", "type": "quantitative", "scale": {"domain": [0,100]}},
     "color": {
  "field": "Category",
  "type": "nominal",
@@ -51,7 +51,7 @@
 "tooltip": [
           {"field": "Region", "type": "nominal"},
       {"field": "Category", "title": "Food Type", "type": "nominal"},
-      {"field": "Percentage", "title": "Percentage (%)", "type": "quantitative", "format": ".2f"}
+      {"field": "Percentage", "title": "Percentage", "type": "quantitative", "format": ".2f"}
         ]
 
 
