@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": 475,
   "height": 325,
-  "title": { "text": "Food Consumption per Country (2017)",
+  "title": { "text": "Food Consumption Per Capita by Country (2017)",
   "subtitle": "GDP per capita measured in 2017 international dollars",
   "subtitleFontStyle": "italic"},
 
