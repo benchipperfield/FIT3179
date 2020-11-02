@@ -59,14 +59,14 @@
     "x": {
       "field": "Meat_2017",
       "type": "quantitative",
-      "title":"Meat consumption (Kg per capita)",
+      "title":"Meat consumption (Kilograms per capita)",
       "axis": {"tickCount": 3}
       
     },
     "y": {
       "field": "Vegetables_2017",
       "type": "quantitative",
-      "title":"Vegetable consumption (Kg per capita)",
+      "title":"Vegetable consumption (Kilograms per capita)",
       "axis": { "tickCount": 3}
     }
   },
